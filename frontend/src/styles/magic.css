@@ -1,0 +1,271 @@
+.laboratory-overview {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 4px 0 20px;
+  border-bottom: 1px solid #d8decc;
+}
+.laboratory-overview > img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+.laboratory-overview h3 {
+  margin: 5px 0;
+  font-size: 21px;
+}
+.laboratory-overview p,
+.laboratory-note {
+  color: #637466;
+  line-height: 1.5;
+  font-size: 13px;
+}
+.potion-capacity {
+  display: inline-block;
+  padding: 7px 12px;
+  margin-top: 10px;
+  background: #dceadf;
+  color: #2b5949;
+  border-radius: 8px;
+}
+.laboratory-potions {
+  display: grid;
+  gap: 12px;
+  margin: 18px 0;
+}
+.laboratory-potion {
+  display: flex;
+  gap: 16px;
+  padding: 15px;
+  border: 1px solid #d9dfcf;
+  border-radius: 12px;
+  background: #fffdf4;
+}
+.laboratory-potion > img {
+  width: 90px;
+  height: 100px;
+  object-fit: contain;
+  align-self: center;
+}
+.laboratory-potion.locked {
+  background: #eaece4;
+}
+.laboratory-potion.locked > img {
+  filter: grayscale(0.8);
+  opacity: 0.55;
+}
+.laboratory-potion-copy {
+  flex: 1;
+  min-width: 0;
+}
+.laboratory-potion-copy p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 7px 0;
+}
+.laboratory-potion-copy small {
+  color: #687765;
+  font-size: 11px;
+}
+.laboratory-potion-copy .label-row {
+  gap: 12px;
+}
+.laboratory-potion-copy .label-row > strong {
+  font-size: 11px;
+  white-space: nowrap;
+  color: #56705b;
+}
+.laboratory-potion-action {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.laboratory-potion-action .button {
+  min-height: 34px;
+  padding: 7px 12px;
+  font-size: 12px;
+}
+.laboratory-potion-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 7px;
+}
+.laboratory-potion-action > span {
+  flex-shrink: 0;
+}
+.potion-removal-confirmation {
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid #d8c7a4;
+  border-radius: 8px;
+  background: #f5eedc;
+}
+.potion-removal-confirmation .button {
+  min-height: 34px;
+  padding: 7px 12px;
+  font-size: 12px;
+}
+.laboratory-potion-action .cost {
+  margin-right: 8px;
+}
+.laboratory-queue {
+  padding: 15px;
+  border-radius: 10px;
+  background: #e5ece1;
+}
+.potion-belt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.potion-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 69px;
+  padding: 3px;
+  border: 1px solid #c4d0b8;
+  border-radius: 10px;
+  background: linear-gradient(#fffdf3, #e5ebda);
+  color: #35563e;
+  box-shadow: inset 0 1px #fff;
+}
+.potion-slot img {
+  width: 43px;
+  height: 43px;
+  object-fit: contain;
+}
+.potion-slot small {
+  font-size: 9px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.potion-slot.empty {
+  color: #a9b19f;
+  background: #dfe5d8;
+  border-style: dashed;
+  box-shadow: none;
+}
+.potion-slot.empty span {
+  font-size: 24px;
+  line-height: 30px;
+  font-family: Georgia, serif;
+  opacity: 0.65;
+}
+.potion-slot:enabled:hover {
+  border-color: #329087;
+  background: #d8f4e9;
+  transform: translateY(-2px);
+}
+.potion-slot:disabled:not(.empty) {
+  opacity: 0.6;
+}
+.potion-confirmation {
+  max-width: 440px;
+}
+.potion-confirmation-art {
+  display: block;
+  margin: 0 auto 12px;
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+}
+.potion-confirmation p {
+  line-height: 1.6;
+}
+.potion-duration {
+  font-size: 12px;
+  color: #536e5b;
+  background: #e4ebda;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 13px 0;
+}
+.potion-confirmation .requirements {
+  color: #8d4935;
+}
+.arena-potion-status {
+  display: inline-flex;
+  gap: 4px;
+  width: max-content;
+  justify-self: center;
+  font-size: 9px;
+  font-weight: 700;
+  color: #fff2c5;
+}
+.arena-potion-status span {
+  padding: 2px 4px;
+  white-space: nowrap;
+  border-radius: 4px;
+  background: #224e61ee;
+}
+.arena-potion-status .attack-boost {
+  background: #91551dee;
+}
+.arena-potion-impact {
+  position: absolute;
+  inset: -18%;
+  pointer-events: none;
+  border: 3px solid #98f7d1;
+  border-radius: 50%;
+  animation: potion-wave 0.9s ease-out both;
+  box-shadow: 0 0 25px #68fbb699;
+}
+.arena-potion-impact.potion-shield {
+  border-color: #7ce4ff;
+  box-shadow: 0 0 25px #39b9ff99;
+}
+.arena-potion-impact.potion-attack {
+  border-color: #ffd157;
+  box-shadow: 0 0 25px #ffa12a99;
+}
+.arena-potion-impact.potion-revive {
+  border-color: #db9eff;
+  box-shadow: 0 0 25px #ba67ff99;
+}
+@keyframes potion-wave {
+  from {
+    transform: scale(0.55);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+}
+@media (max-width: 550px) {
+  .laboratory-potion {
+    gap: 9px;
+    padding: 11px;
+  }
+  .laboratory-potion > img {
+    width: 64px;
+    height: 80px;
+  }
+  .laboratory-overview > img {
+    width: 80px;
+    height: 90px;
+  }
+  .laboratory-overview h3 {
+    font-size: 17px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .arena-potion-impact {
+    animation: none;
+    opacity: 0.6;
+  }
+  .potion-slot:enabled:hover {
+    transform: none;
+  }
+}
+
+.battle-arena > .modal-backdrop {
+  z-index: 500;
+}

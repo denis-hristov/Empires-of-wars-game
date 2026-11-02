@@ -1,0 +1,30 @@
+export const en = {
+  title: "Empires of wars",
+  subtitle: "AN ISLAND. AN AMBITION. AN EMPIRE.",
+  island: "Your island",
+  build: "Build",
+  army: "Army",
+  research: "Research",
+  town: "New beginnings",
+  expedition: "Stone Coast",
+  population: "Army capacity",
+  save: "Save game",
+  load: "Load game",
+  export: "Export save",
+  import: "Import save",
+  pause: "Pause",
+  resume: "Resume",
+  settings: "Game menu",
+  collect: "Collect resources",
+  upgrade: "Upgrade",
+  move: "Move building",
+  localStorage: "Local storage",
+  endTurn: "End turn",
+  beginBattle: "Begin expedition",
+  cancel: "Cancel",
+  ready: "Ready",
+  newGame: "New island",
+};
+export function t(key) {
+  return en[key] || key;
+}

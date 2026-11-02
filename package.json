@@ -1,0 +1,27 @@
+{
+  "name": "empires-of-wars",
+  "version": "0.4.7",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace frontend",
+    "build": "npm run build --workspace frontend",
+    "preview": "npm run preview --workspace frontend",
+    "build:wasm": "bash scripts/build-wasm.sh",
+    "test": "node --test frontend/tests/*.test.js",
+    "desktop:dev": "tauri dev",
+    "desktop:build": "tauri build",
+    "test:offline": "node frontend/tests/offline.check.js",
+    "format": "prettier --write \"frontend/src/**/*.{js,jsx,css}\" \"frontend/tests/*.js\" \"scripts/*.js\"",
+    "update:visuals": "node scripts/update-visuals.js"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.12.3",
+    "@vitejs/plugin-react": "^5.2.0",
+    "prettier": "^3.9.10",
+    "vite": "^7.3.7"
+  }
+}

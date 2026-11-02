@@ -1,0 +1,14 @@
+{
+  "28": {
+    "domain": "naval",
+    "enemies": ["W01", "W02", "W04"]
+  },
+  "29": {
+    "domain": "naval",
+    "enemies": ["W04", "W01", "W03"]
+  },
+  "30": {
+    "domain": "naval",
+    "enemies": ["W03", "W04", "W02", "W03"]
+  }
+}

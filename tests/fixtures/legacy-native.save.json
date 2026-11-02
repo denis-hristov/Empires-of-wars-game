@@ -1,0 +1,1052 @@
+{
+  "checksum": "3e58a47f0ba283a9",
+  "game": {
+    "appliedRewards": [],
+    "battle": {
+      "fighters": [
+        {
+          "attacked": false,
+          "damage": 34,
+          "defense": 5,
+          "enemy": false,
+          "health": 100,
+          "id": 8,
+          "maxHealth": 100,
+          "moved": false,
+          "movement": 3,
+          "position": [
+            3,
+            0
+          ],
+          "range": 1,
+          "type": "infantry"
+        },
+        {
+          "attacked": false,
+          "damage": 34,
+          "defense": 5,
+          "enemy": false,
+          "health": 100,
+          "id": 9,
+          "maxHealth": 100,
+          "moved": false,
+          "movement": 3,
+          "position": [
+            0,
+            1
+          ],
+          "range": 1,
+          "type": "infantry"
+        },
+        {
+          "attacked": false,
+          "damage": 34,
+          "defense": 5,
+          "enemy": false,
+          "health": 100,
+          "id": 10,
+          "maxHealth": 100,
+          "moved": false,
+          "movement": 3,
+          "position": [
+            0,
+            2
+          ],
+          "range": 1,
+          "type": "infantry"
+        },
+        {
+          "attacked": false,
+          "damage": 16,
+          "defense": 3,
+          "enemy": true,
+          "health": 65,
+          "id": 9223372036854775808,
+          "maxHealth": 65,
+          "moved": false,
+          "movement": 2,
+          "position": [
+            5,
+            0
+          ],
+          "range": 1,
+          "type": "raider"
+        },
+        {
+          "attacked": false,
+          "damage": 16,
+          "defense": 3,
+          "enemy": true,
+          "health": 65,
+          "id": 9223372036854775809,
+          "maxHealth": 65,
+          "moved": false,
+          "movement": 2,
+          "position": [
+            5,
+            3
+          ],
+          "range": 1,
+          "type": "raider"
+        }
+      ],
+      "finished": false,
+      "id": 1,
+      "round": 2,
+      "victory": false
+    },
+    "buildings": [
+      {
+        "id": 1,
+        "level": 1,
+        "position": [
+          17,
+          17
+        ],
+        "queue": [],
+        "remainder": 0,
+        "remainingMs": 0,
+        "state": 1,
+        "stored": 100,
+        "type": "townhall"
+      },
+      {
+        "id": 2,
+        "level": 1,
+        "position": [
+          16,
+          16
+        ],
+        "queue": [],
+        "remainder": 0,
+        "remainingMs": 0,
+        "state": 1,
+        "stored": 0,
+        "type": "house"
+      },
+      {
+        "id": 3,
+        "level": 1,
+        "position": [
+          18,
+          16
+        ],
+        "queue": [],
+        "remainder": 0,
+        "remainingMs": 0,
+        "state": 1,
+        "stored": 0,
+        "type": "house"
+      },
+      {
+        "id": 4,
+        "level": 1,
+        "position": [
+          20,
+          16
+        ],
+        "queue": [],
+        "remainder": 0,
+        "remainingMs": 0,
+        "state": 1,
+        "stored": 0,
+        "type": "house"
+      },
+      {
+        "id": 5,
+        "level": 1,
+        "position": [
+          16,
+          19
+        ],
+        "queue": [],
+        "remainder": 0,
+        "remainingMs": 0,
+        "state": 1,
+        "stored": 120,
+        "type": "farm"
+      },
+      {
+        "id": 6,
+        "level": 1,
+        "position": [
+          20,
+          18
+        ],
+        "queue": [],
+        "remainder": 0,
+        "remainingMs": 0,
+        "state": 1,
+        "stored": 100,
+        "type": "lumberyard"
+      },
+      {
+        "id": 7,
+        "level": 1,
+        "position": [
+          19,
+          20
+        ],
+        "queue": [],
+        "remainder": 0,
+        "remainingMs": 0,
+        "state": 1,
+        "stored": 0,
+        "type": "barracks"
+      }
+    ],
+    "civilian": 33,
+    "config": {
+      "balanceStatus": "Experimental prototype values; all GDD TBD values remain provisional.",
+      "battle": {
+        "captives": 5,
+        "enemies": 2,
+        "enemyDamage": 16,
+        "enemyDefense": 3,
+        "enemyHealth": 65,
+        "enemyMovement": 2,
+        "enemyRange": 1,
+        "height": 7,
+        "maxArmy": 6,
+        "rewards": {
+          "coins": 120,
+          "food": 70,
+          "iron": 30,
+          "stone": 65,
+          "wood": 90
+        },
+        "width": 8
+      },
+      "buildings": [
+        {
+          "coastalNeighbors": 0,
+          "description": "Сърцето на острова. Отключва нови нива.",
+          "footprint": [
+            2,
+            2
+          ],
+          "id": "townhall",
+          "levels": [
+            {
+              "cost": {
+                "coins": 140,
+                "stone": 80,
+                "wood": 120
+              },
+              "housing": 0,
+              "localCapacity": 100,
+              "populationRequired": 0,
+              "ratePerSecond": 1,
+              "seconds": 6,
+              "townHallRequired": 1
+            },
+            {
+              "cost": {
+                "coins": 280,
+                "stone": 160,
+                "wood": 240
+              },
+              "housing": 0,
+              "localCapacity": 200,
+              "populationRequired": 0,
+              "ratePerSecond": 2,
+              "seconds": 12,
+              "townHallRequired": 1
+            },
+            {
+              "cost": {
+                "coins": 420,
+                "stone": 240,
+                "wood": 360
+              },
+              "housing": 0,
+              "localCapacity": 300,
+              "populationRequired": 0,
+              "ratePerSecond": 3,
+              "seconds": 18,
+              "townHallRequired": 2
+            }
+          ],
+          "name": "Община",
+          "queueCapacity": 3,
+          "resource": "coins",
+          "terrain": [
+            "sand",
+            "grass"
+          ]
+        },
+        {
+          "coastalNeighbors": 0,
+          "description": "Дава място за нови жители.",
+          "footprint": [
+            1,
+            1
+          ],
+          "id": "house",
+          "levels": [
+            {
+              "cost": {
+                "coins": 20,
+                "stone": 10,
+                "wood": 35
+              },
+              "housing": 12,
+              "localCapacity": 0,
+              "populationRequired": 0,
+              "ratePerSecond": 0,
+              "seconds": 6,
+              "townHallRequired": 1
+            },
+            {
+              "cost": {
+                "coins": 40,
+                "stone": 20,
+                "wood": 70
+              },
+              "housing": 24,
+              "localCapacity": 0,
+              "populationRequired": 0,
+              "ratePerSecond": 0,
+              "seconds": 12,
+              "townHallRequired": 1
+            },
+            {
+              "cost": {
+                "coins": 60,
+                "stone": 30,
+                "wood": 105
+              },
+              "housing": 36,
+              "localCapacity": 0,
+              "populationRequired": 0,
+              "ratePerSecond": 0,
+              "seconds": 18,
+              "townHallRequired": 2
+            }
+          ],
+          "name": "Къща",
+          "queueCapacity": 3,
+          "resource": null,
+          "terrain": [
+            "sand",
+            "grass"
+          ]
+        },
+        {
+          "coastalNeighbors": 0,
+          "description": "Произвежда храна в собствен склад.",
+          "footprint": [
+            2,
+            1
+          ],
+          "id": "farm",
+          "levels": [
+            {
+              "cost": {
+                "coins": 25,
+                "stone": 10,
+                "wood": 45
+              },
+              "housing": 0,
+              "localCapacity": 120,
+              "populationRequired": 0,
+              "ratePerSecond": 3,
+              "seconds": 6,
+              "townHallRequired": 1
+            },
+            {
+              "cost": {
+                "coins": 50,
+                "stone": 20,
+                "wood": 90
+              },
+              "housing": 0,
+              "localCapacity": 240,
+              "populationRequired": 0,
+              "ratePerSecond": 6,
+              "seconds": 12,
+              "townHallRequired": 1
+            },
+            {
+              "cost": {
+                "coins": 75,
+                "stone": 30,
+                "wood": 135
+              },
+              "housing": 0,
+              "localCapacity": 360,
+              "populationRequired": 0,
+              "ratePerSecond": 9,
+              "seconds": 18,
+              "townHallRequired": 2
+            }
+          ],
+          "name": "Ферма",
+          "queueCapacity": 3,
+          "resource": "food",
+          "terrain": [
+            "sand",
+            "grass"
+          ]
+        },
+        {
+          "coastalNeighbors": 0,
+          "description": "Превръща труда в дърво за строежи.",
+          "footprint": [
+            1,
+            1
+          ],
+          "id": "lumberyard",
+          "levels": [
+            {
+              "cost": {
+                "coins": 25,
+                "stone": 10,
+                "wood": 25
+              },
+              "housing": 0,
+              "localCapacity": 100,
+              "populationRequired": 0,
+              "ratePerSecond": 2,
+              "seconds": 6,
+              "townHallRequired": 1
+            },
+            {
+              "cost": {
+                "coins": 50,
+                "stone": 20,
+                "wood": 50
+              },
+              "housing": 0,
+              "localCapacity": 200,
+              "populationRequired": 0,
+              "ratePerSecond": 4,
+              "seconds": 12,
+              "townHallRequired": 1
+            },
+            {
+              "cost": {
+                "coins": 75,
+                "stone": 30,
+                "wood": 75
+              },
+              "housing": 0,
+              "localCapacity": 300,
+              "populationRequired": 0,
+              "ratePerSecond": 6,
+              "seconds": 18,
+              "townHallRequired": 2
+            }
+          ],
+          "name": "Дърводелница",
+          "queueCapacity": 3,
+          "resource": "wood",
+          "terrain": [
+            "grass",
+            "sand",
+            "forest"
+          ]
+        },
+        {
+          "coastalNeighbors": 0,
+          "description": "Доставя камък за разрастване.",
+          "footprint": [
+            1,
+            1
+          ],
+          "id": "stone",
+          "levels": [
+            {
+              "cost": {
+                "coins": 45,
+                "wood": 55
+              },
+              "housing": 0,
+              "localCapacity": 80,
+              "populationRequired": 0,
+              "ratePerSecond": 2,
+              "seconds": 6,
+              "townHallRequired": 1
+            },
+            {
+              "cost": {
+                "coins": 90,
+                "wood": 110
+              },
+              "housing": 0,
+              "localCapacity": 160,
+              "populationRequired": 0,
+              "ratePerSecond": 4,
+              "seconds": 12,
+              "townHallRequired": 1
+            },
+            {
+              "cost": {
+                "coins": 135,
+                "wood": 165
+              },
+              "housing": 0,
+              "localCapacity": 240,
+              "populationRequired": 0,
+              "ratePerSecond": 6,
+              "seconds": 18,
+              "townHallRequired": 2
+            }
+          ],
+          "name": "Каменна мина",
+          "queueCapacity": 3,
+          "resource": "stone",
+          "terrain": [
+            "grass",
+            "sand",
+            "mountain"
+          ]
+        },
+        {
+          "coastalNeighbors": 0,
+          "description": "Желязо за флот и авиация.",
+          "footprint": [
+            1,
+            1
+          ],
+          "id": "iron",
+          "levels": [
+            {
+              "cost": {
+                "coins": 60,
+                "stone": 45,
+                "wood": 70
+              },
+              "housing": 0,
+              "localCapacity": 60,
+              "populationRequired": 0,
+              "ratePerSecond": 1,
+              "seconds": 6,
+              "townHallRequired": 1
+            },
+            {
+              "cost": {
+                "coins": 120,
+                "stone": 90,
+                "wood": 140
+              },
+              "housing": 0,
+              "localCapacity": 120,
+              "populationRequired": 0,
+              "ratePerSecond": 2,
+              "seconds": 12,
+              "townHallRequired": 1
+            },
+            {
+              "cost": {
+                "coins": 180,
+                "stone": 135,
+                "wood": 210
+              },
+              "housing": 0,
+              "localCapacity": 180,
+              "populationRequired": 0,
+              "ratePerSecond": 3,
+              "seconds": 18,
+              "townHallRequired": 2
+            }
+          ],
+          "name": "Желязна мина",
+          "queueCapacity": 3,
+          "resource": "iron",
+          "terrain": [
+            "grass",
+            "mountain"
+          ]
+        },
+        {
+          "coastalNeighbors": 0,
+          "description": "Обучава цивилни жители в пехота.",
+          "footprint": [
+            1,
+            1
+          ],
+          "id": "barracks",
+          "levels": [
+            {
+              "cost": {
+                "coins": 50,
+                "stone": 35,
+                "wood": 60
+              },
+              "housing": 0,
+              "localCapacity": 0,
+              "populationRequired": 0,
+              "ratePerSecond": 0,
+              "seconds": 6,
+              "townHallRequired": 1
+            },
+            {
+              "cost": {
+                "coins": 100,
+                "stone": 70,
+                "wood": 120
+              },
+              "housing": 0,
+              "localCapacity": 0,
+              "populationRequired": 0,
+              "ratePerSecond": 0,
+              "seconds": 12,
+              "townHallRequired": 1
+            },
+            {
+              "cost": {
+                "coins": 150,
+                "stone": 105,
+                "wood": 180
+              },
+              "housing": 0,
+              "localCapacity": 0,
+              "populationRequired": 0,
+              "ratePerSecond": 0,
+              "seconds": 18,
+              "townHallRequired": 2
+            }
+          ],
+          "name": "Казарма",
+          "queueCapacity": 3,
+          "resource": null,
+          "terrain": [
+            "sand",
+            "grass"
+          ]
+        },
+        {
+          "coastalNeighbors": 0,
+          "description": "Изследва технологии за твоята армия.",
+          "footprint": [
+            1,
+            1
+          ],
+          "id": "academy",
+          "levels": [
+            {
+              "cost": {
+                "coins": 100,
+                "stone": 65,
+                "wood": 85
+              },
+              "housing": 0,
+              "localCapacity": 0,
+              "populationRequired": 0,
+              "ratePerSecond": 0,
+              "seconds": 6,
+              "townHallRequired": 1
+            },
+            {
+              "cost": {
+                "coins": 200,
+                "stone": 130,
+                "wood": 170
+              },
+              "housing": 0,
+              "localCapacity": 0,
+              "populationRequired": 0,
+              "ratePerSecond": 0,
+              "seconds": 12,
+              "townHallRequired": 1
+            },
+            {
+              "cost": {
+                "coins": 300,
+                "stone": 195,
+                "wood": 255
+              },
+              "housing": 0,
+              "localCapacity": 0,
+              "populationRequired": 0,
+              "ratePerSecond": 0,
+              "seconds": 18,
+              "townHallRequired": 2
+            }
+          ],
+          "name": "Академия",
+          "queueCapacity": 3,
+          "resource": null,
+          "terrain": [
+            "sand",
+            "grass"
+          ]
+        },
+        {
+          "coastalNeighbors": 1,
+          "description": "Изисква бряг. Строи кораби във водата.",
+          "footprint": [
+            1,
+            1
+          ],
+          "id": "harbor",
+          "levels": [
+            {
+              "cost": {
+                "coins": 100,
+                "stone": 55,
+                "wood": 100
+              },
+              "housing": 0,
+              "localCapacity": 0,
+              "populationRequired": 0,
+              "ratePerSecond": 0,
+              "seconds": 6,
+              "townHallRequired": 1
+            },
+            {
+              "cost": {
+                "coins": 200,
+                "stone": 110,
+                "wood": 200
+              },
+              "housing": 0,
+              "localCapacity": 0,
+              "populationRequired": 0,
+              "ratePerSecond": 0,
+              "seconds": 12,
+              "townHallRequired": 1
+            },
+            {
+              "cost": {
+                "coins": 300,
+                "stone": 165,
+                "wood": 300
+              },
+              "housing": 0,
+              "localCapacity": 0,
+              "populationRequired": 0,
+              "ratePerSecond": 0,
+              "seconds": 18,
+              "townHallRequired": 2
+            }
+          ],
+          "name": "Пристанище",
+          "queueCapacity": 3,
+          "resource": null,
+          "terrain": [
+            "sand",
+            "grass"
+          ]
+        },
+        {
+          "coastalNeighbors": 0,
+          "description": "Произвежда самолети върху свободна суша.",
+          "footprint": [
+            2,
+            2
+          ],
+          "id": "airbase",
+          "levels": [
+            {
+              "cost": {
+                "coins": 140,
+                "iron": 70,
+                "stone": 100,
+                "wood": 120
+              },
+              "housing": 0,
+              "localCapacity": 0,
+              "populationRequired": 0,
+              "ratePerSecond": 0,
+              "seconds": 6,
+              "townHallRequired": 1
+            },
+            {
+              "cost": {
+                "coins": 280,
+                "iron": 140,
+                "stone": 200,
+                "wood": 240
+              },
+              "housing": 0,
+              "localCapacity": 0,
+              "populationRequired": 0,
+              "ratePerSecond": 0,
+              "seconds": 12,
+              "townHallRequired": 1
+            },
+            {
+              "cost": {
+                "coins": 420,
+                "iron": 210,
+                "stone": 300,
+                "wood": 360
+              },
+              "housing": 0,
+              "localCapacity": 0,
+              "populationRequired": 0,
+              "ratePerSecond": 0,
+              "seconds": 18,
+              "townHallRequired": 2
+            }
+          ],
+          "name": "Авиационна база",
+          "queueCapacity": 3,
+          "resource": null,
+          "terrain": [
+            "sand",
+            "grass"
+          ]
+        }
+      ],
+      "initialResources": {
+        "coins": 260,
+        "food": 180,
+        "iron": 80,
+        "stone": 160,
+        "wood": 240
+      },
+      "population": {
+        "foodPerSettler": 2,
+        "foodRateTable": [
+          {
+            "minimum": 2,
+            "percent": 50
+          },
+          {
+            "minimum": 60,
+            "percent": 100
+          },
+          {
+            "minimum": 150,
+            "percent": 150
+          }
+        ],
+        "initial": 18,
+        "settlementSeconds": 8
+      },
+      "schemaVersion": 1,
+      "simulation": {
+        "stepMs": 50
+      },
+      "startingBuildings": [
+        {
+          "offset": [
+            -1,
+            -1
+          ],
+          "type": "townhall"
+        },
+        {
+          "offset": [
+            -2,
+            -2
+          ],
+          "type": "house"
+        },
+        {
+          "offset": [
+            0,
+            -2
+          ],
+          "type": "house"
+        },
+        {
+          "offset": [
+            2,
+            -2
+          ],
+          "type": "house"
+        },
+        {
+          "offset": [
+            -2,
+            1
+          ],
+          "type": "farm"
+        },
+        {
+          "offset": [
+            2,
+            0
+          ],
+          "type": "lumberyard"
+        },
+        {
+          "offset": [
+            1,
+            2
+          ],
+          "type": "barracks"
+        }
+      ],
+      "technologies": [
+        {
+          "academyLevel": 1,
+          "cost": {
+            "coins": 65,
+            "iron": 15
+          },
+          "damageBonus": 12,
+          "domain": "land",
+          "healthBonus": 20,
+          "id": "infantry_drill",
+          "name": "Тактическа подготовка",
+          "prerequisites": [],
+          "seconds": 12
+        },
+        {
+          "academyLevel": 1,
+          "cost": {
+            "coins": 90,
+            "wood": 60
+          },
+          "damageBonus": 10,
+          "domain": "naval",
+          "healthBonus": 20,
+          "id": "naval",
+          "name": "Морско дело",
+          "prerequisites": [],
+          "seconds": 16
+        },
+        {
+          "academyLevel": 2,
+          "cost": {
+            "coins": 130,
+            "iron": 50
+          },
+          "damageBonus": 10,
+          "domain": "air",
+          "healthBonus": 15,
+          "id": "aviation",
+          "name": "Основи на авиацията",
+          "prerequisites": [
+            "naval"
+          ],
+          "seconds": 20
+        }
+      ],
+      "townHallLimits": [
+        2,
+        3,
+        3
+      ],
+      "units": [
+        {
+          "building": "barracks",
+          "cost": {
+            "coins": 20,
+            "food": 15
+          },
+          "damage": 34,
+          "defense": 5,
+          "domain": "land",
+          "health": 100,
+          "id": "infantry",
+          "level": 1,
+          "movement": 3,
+          "name": "Пехота",
+          "people": 1,
+          "populationRequired": 0,
+          "range": 1,
+          "seconds": 7,
+          "technology": ""
+        },
+        {
+          "building": "harbor",
+          "cost": {
+            "coins": 60,
+            "iron": 25,
+            "wood": 65
+          },
+          "damage": 50,
+          "defense": 12,
+          "domain": "naval",
+          "health": 180,
+          "id": "ship",
+          "level": 1,
+          "movement": 3,
+          "name": "Патрулен кораб",
+          "people": 3,
+          "populationRequired": 30,
+          "range": 3,
+          "seconds": 14,
+          "technology": "naval"
+        },
+        {
+          "building": "airbase",
+          "cost": {
+            "coins": 90,
+            "iron": 50
+          },
+          "damage": 45,
+          "defense": 4,
+          "domain": "air",
+          "health": 90,
+          "id": "aircraft",
+          "level": 1,
+          "movement": 5,
+          "name": "Разузнавателен самолет",
+          "people": 2,
+          "populationRequired": 45,
+          "range": 3,
+          "seconds": 18,
+          "technology": "aviation"
+        }
+      ],
+      "world": {
+        "forestThreshold": 590,
+        "generatorVersion": 1,
+        "height": 36,
+        "mountainThreshold": 735,
+        "noiseAmplitude": 390,
+        "sandThreshold": 230,
+        "seed": 7319,
+        "waterThreshold": 100,
+        "width": 36
+      }
+    },
+    "elapsedMs": 264450,
+    "generatorVersion": 1,
+    "nextBattleId": 2,
+    "nextId": 11,
+    "pendingMs": 2,
+    "research": [],
+    "savedAtUTC": 1792174576,
+    "schemaVersion": 1,
+    "seed": 7319,
+    "settlementRemainder": 0,
+    "stock": [
+      99,
+      240,
+      160,
+      80,
+      200
+    ],
+    "technologies": [],
+    "units": [
+      {
+        "health": 100,
+        "id": 8,
+        "position": [
+          19,
+          19
+        ],
+        "source": 7,
+        "type": "infantry"
+      },
+      {
+        "health": 100,
+        "id": 9,
+        "position": [
+          18,
+          20
+        ],
+        "source": 7,
+        "type": "infantry"
+      },
+      {
+        "health": 100,
+        "id": 10,
+        "position": [
+          20,
+          20
+        ],
+        "source": 7,
+        "type": "infantry"
+      }
+    ]
+  }
+}

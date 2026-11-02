@@ -1,0 +1,60 @@
+name: Build and verify
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  engine-and-web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: bash scripts/setup-wasm.sh
+      - run: npm run build:wasm
+      - run: cmake -S . -B build-core -DCMAKE_BUILD_TYPE=Release
+      - run: cmake --build build-core --parallel
+      - run: ctest --test-dir build-core --output-on-failure
+      - run: npm test
+      - run: npm run build
+      - run: npm run test:offline
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wasm-runtime
+          path: frontend/public/wasm/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: browser-game
+          path: frontend/dist/
+  desktop:
+    needs: engine-and-web
+    strategy:
+      matrix:
+        include:
+          - os: macos-14
+            bundles: app
+          - os: windows-latest
+            bundles: nsis
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: rustup toolchain install stable --profile minimal
+      - run: rustup default stable
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          name: wasm-runtime
+          path: frontend/public/wasm/
+      - run: npm run desktop:build -- --bundles ${{ matrix.bundles }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: desktop-${{ matrix.os }}
+          path: src-tauri/target/release/bundle/

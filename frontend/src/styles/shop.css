@@ -1,0 +1,356 @@
+.modal.shop-dialog {
+  width: min(800px, calc(100vw - 36px));
+  max-height: calc(100dvh - 40px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.modal.shop-dialog > .modal-heading {
+  flex-shrink: 0;
+}
+.shop-panel {
+  min-height: 0;
+  overflow: auto;
+  padding: 2px 3px 0;
+}
+.shop-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  margin-bottom: 20px;
+}
+.shop-intro-copy {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.shop-crest {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  color: #8c6b32;
+  border: 1px solid #ddcda7;
+  background: #f1e8d3;
+}
+.shop-intro .eyebrow {
+  font-size: 9px;
+  color: #947949;
+  letter-spacing: 2px;
+}
+.shop-intro p {
+  max-width: 345px;
+  font-size: 12px;
+  margin-top: 5px;
+  line-height: 1.6;
+}
+.shop-gold {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 17px;
+  flex-shrink: 0;
+  background: #eee1bf;
+  border: 1px solid #decc9e;
+  border-radius: 12px;
+  color: #856326;
+}
+.shop-gold small,
+.shop-gold strong {
+  display: block;
+}
+.shop-gold small {
+  font-size: 10px;
+  margin-bottom: 2px;
+}
+.shop-gold strong {
+  font-size: 21px;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+.shop-stockpile {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 9px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dedfce;
+}
+.shop-stock {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #e2e4d5;
+  border-radius: 10px;
+  padding: 11px 12px;
+  background: #ffffff69;
+}
+.shop-stock > svg {
+  flex-shrink: 0;
+}
+.shop-stock span {
+  min-width: 0;
+}
+.shop-stock small {
+  display: block;
+  font-size: 10px;
+  color: #7a8475;
+  margin-bottom: 3px;
+}
+.shop-stock strong {
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+.shop-stock.food,
+.shop-offer.food {
+  --shop-resource: #728844;
+}
+.shop-stock.wood,
+.shop-offer.wood {
+  --shop-resource: #a0784e;
+}
+.shop-stock.stone,
+.shop-offer.stone {
+  --shop-resource: #83938d;
+}
+.shop-stock.iron,
+.shop-offer.iron {
+  --shop-resource: #708f9f;
+}
+.shop-stock > svg {
+  color: var(--shop-resource);
+}
+.shop-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0 16px;
+}
+.shop-tabs {
+  display: flex;
+  padding: 4px;
+  gap: 4px;
+  border: 1px solid #dce1d1;
+  background: #edf0e4;
+  border-radius: 10px;
+}
+.shop-tabs button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 9px 13px;
+  font-size: 12px;
+  border-radius: 7px;
+  color: #74816b;
+  white-space: nowrap;
+}
+.shop-tabs button[aria-selected="true"] {
+  background: #faf8ef;
+  color: #365b40;
+  box-shadow: 0 2px 5px #344a3520;
+  font-weight: 650;
+}
+.shop-quantity {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.shop-quantity > span {
+  font-size: 10px;
+  color: #7f8875;
+  margin-right: 3px;
+}
+.shop-quantity button {
+  min-width: 35px;
+  min-height: 32px;
+  padding: 5px 8px;
+  font-size: 11px;
+  border: 1px solid #dce1d1;
+  background: #f5f4e9;
+  border-radius: 6px;
+}
+.shop-quantity button[aria-pressed="true"] {
+  color: #f9f7e9;
+  border-color: #42644a;
+  background: #42644a;
+}
+.shop-offers {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.shop-offer {
+  padding: 17px;
+  border: 1px solid #dce0cf;
+  border-radius: 12px;
+  background: #fffdf6;
+  box-shadow: 0 3px 9px #344a3506;
+}
+.shop-offer header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.shop-resource-icon {
+  display: grid;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  border-radius: 11px;
+  color: var(--shop-resource);
+  background: color-mix(in srgb, var(--shop-resource) 12%, #fffdf6);
+}
+.shop-offer h3 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+.shop-offer header small {
+  font-size: 10px;
+  color: #929681;
+}
+.shop-exchange {
+  display: grid;
+  grid-template-columns: 1fr 24px 1fr;
+  align-items: center;
+  gap: 10px;
+  margin: 18px 0;
+  padding: 13px 0;
+  border-top: 1px solid #ececdf;
+  border-bottom: 1px solid #ececdf;
+}
+.shop-exchange > svg {
+  color: #b8b79c;
+}
+.shop-exchange > div {
+  min-width: 0;
+}
+.shop-exchange small {
+  display: block;
+  color: #8f9581;
+  font-size: 9px;
+}
+.shop-exchange strong {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #3b5740;
+  font-size: 20px;
+  line-height: 1.35;
+  margin: 4px 0;
+  font-variant-numeric: tabular-nums;
+}
+.shop-exchange strong svg {
+  flex-shrink: 0;
+  color: #a28b56;
+}
+.shop-exchange span {
+  color: #7a8470;
+  font-size: 10px;
+}
+.shop-offer .button {
+  min-height: 39px;
+  font-size: 12px;
+}
+.shop-offer .button:disabled {
+  opacity: 0.6;
+}
+.shop-offer-note {
+  font-size: 9px;
+  margin-top: 9px;
+  min-height: 15px;
+  line-height: 1.5;
+  text-align: center;
+}
+.shop-offer-note.ready {
+  color: #87957b;
+}
+.shop-offer-note.unavailable {
+  color: #9d8058;
+}
+.shop-feedback {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 11px 13px;
+  font-size: 11px;
+  line-height: 1.5;
+  background: #f0f0e4;
+  color: #849077;
+  border-radius: 8px;
+}
+.shop-feedback svg {
+  flex-shrink: 0;
+}
+.shop-feedback.success {
+  background: #e7eddb;
+  color: #426849;
+}
+.shop-feedback.error {
+  background: #f1e3d8;
+  color: #9f624a;
+}
+@media (max-width: 640px) {
+  .modal.shop-dialog {
+    width: calc(100vw - 20px);
+    padding: 20px 16px;
+    max-height: calc(100dvh - 20px);
+  }
+  .shop-intro {
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .shop-intro-copy {
+    gap: 9px;
+  }
+  .shop-crest {
+    display: none;
+  }
+  .shop-intro p {
+    font-size: 11px;
+    max-width: 230px;
+  }
+  .shop-gold {
+    padding: 9px 11px;
+    gap: 6px;
+  }
+  .shop-gold strong {
+    font-size: 18px;
+  }
+  .shop-gold > svg {
+    width: 20px;
+  }
+  .shop-stockpile {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .shop-toolbar {
+    gap: 10px;
+  }
+  .shop-tabs {
+    flex: 1;
+  }
+  .shop-tabs button {
+    flex: 1;
+    padding: 8px 9px;
+    font-size: 11px;
+  }
+  .shop-offers {
+    grid-template-columns: 1fr;
+  }
+  .shop-quantity {
+    margin-left: auto;
+  }
+  .shop-offer {
+    padding: 15px;
+  }
+  .shop-exchange {
+    margin: 14px 0;
+  }
+}
