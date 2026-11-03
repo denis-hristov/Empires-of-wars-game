@@ -70,8 +70,8 @@ The [Build and verify workflow](https://github.com/denis-hristov/Empires-of-wars
 
 | Platform | Artifact | Installation |
 | --- | --- | --- |
-| macOS Apple Silicon | `desktop-macos-14` | Extract the archive, find `Empires of wars.app` inside `macos`, then move it to Applications. |
-| Windows x64 | `desktop-windows-latest` | Extract the archive, find the installer inside `nsis`, then run it. |
+| macOS Apple Silicon | `desktop-macos-15` | Extract the downloaded artifact, then extract `Empires-of-wars-macOS-arm64.zip` inside it. Move `Empires of wars.app` to Applications. |
+| Windows x64 | `desktop-windows-latest` | Extract the downloaded artifact, then run the included `.exe` installer. |
 
 These are build artifacts, not published GitHub Releases. Downloads are available only after the corresponding workflow jobs succeed, and artifacts expire according to the repository's retention settings. The Mac application uses local ad-hoc signing and is not notarized by Apple. Windows packaging is configured but has not been tested locally on Windows.
 

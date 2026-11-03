@@ -35,10 +35,12 @@ jobs:
     strategy:
       matrix:
         include:
-          - os: macos-14
+          - os: macos-15
             bundles: app
+            artifact_path: src-tauri/target/release/bundle/Empires-of-wars-macOS-arm64.zip
           - os: windows-latest
             bundles: nsis
+            artifact_path: src-tauri/target/release/bundle/nsis/*.exe
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
@@ -54,7 +56,11 @@ jobs:
           name: wasm-runtime
           path: frontend/public/wasm/
       - run: npm run desktop:build -- --bundles ${{ matrix.bundles }}
+      - name: Archive macOS application with executable permissions
+        if: runner.os == 'macOS'
+        run: ditto -c -k --sequesterRsrc --keepParent "src-tauri/target/release/bundle/macos/Empires of wars.app" "src-tauri/target/release/bundle/Empires-of-wars-macOS-arm64.zip"
       - uses: actions/upload-artifact@v4
         with:
           name: desktop-${{ matrix.os }}
-          path: src-tauri/target/release/bundle/
+          path: ${{ matrix.artifact_path }}
+          if-no-files-found: error
